@@ -21,5 +21,5 @@ steps:
     location: 'UK South'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://github.com/harold274/azure-quickstart-templates/tree/master/201-vm-winrm-windows/azuredeploy.json'
-    csmParametersFileLink: 'https://selhar@dev.azure.com/selhar/Devops_linux_hdc/_git/Devops_linux_hdc/ubuntu/parameters.json'
+    csmParametersFileLink: 'https://github.com/harold274/azure-quickstart-templates/tree/master/201-vm-winrm-windows/parameters.json'
     deploymentMode: 'Incremental'
