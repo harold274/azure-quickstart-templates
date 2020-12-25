@@ -20,6 +20,6 @@ steps:
     resourceGroupName: 'hdclinux_test1'
     location: 'UK South'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://selhar@dev.azure.com/selhar/Devops_linux_hdc/_git/Devops_linux_hdc/ubuntu/template.json'
+    csmFileLink: '/template.json'
     csmParametersFileLink: 'https://selhar@dev.azure.com/selhar/Devops_linux_hdc/_git/Devops_linux_hdc/ubuntu/parameters.json'
     deploymentMode: 'Incremental'
