@@ -10,3 +10,16 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+# Starter pipeline
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Pay-As-You-Go(3f26080f-d327-454e-9d9c-4ef79d8ce984)'
+    subscriptionId: '3f26080f-d327-454e-9d9c-4ef79d8ce984'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'hdclinux_test1'
+    location: 'UK South'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://selhar@dev.azure.com/selhar/Devops_linux_hdc/_git/Devops_linux_hdc/ubuntu/template.json'
+    csmParametersFileLink: 'https://selhar@dev.azure.com/selhar/Devops_linux_hdc/_git/Devops_linux_hdc/ubuntu/parameters.json'
+    deploymentMode: 'Incremental'
